@@ -1,9 +1,10 @@
 import React from 'react'
+import Nav from './Nav'
 
 const InsertCourse = () => {
   return (
     <div>
-
+          <Nav />
         <div className="container">
             <div className="row">
                 <h1><b>INSERT COURSE</b></h1>
