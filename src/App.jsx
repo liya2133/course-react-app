@@ -17,7 +17,7 @@ function App() {
      
 <Routes>
   <Route path='/' element={<InsertCourse/>}/>
-   <Route path='/' element={<ViewCourse/>}/>
+   <Route path='/view' element={<ViewCourse/>}/>
 </Routes>
     
       </BrowserRouter>

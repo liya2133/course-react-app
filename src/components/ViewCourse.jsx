@@ -28,7 +28,7 @@ const ViewCourse = () => {
            <Nav />
       <div className="container mt-4">
         <h2 className="text-center mb-4">
-          <b><i>VIEW ALL EMPLOYEES</i></b>
+          <b><i>View Course</i></b>
         </h2>
         <table className="table">
           <thead>
