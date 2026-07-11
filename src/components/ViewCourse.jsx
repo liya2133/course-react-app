@@ -23,44 +23,49 @@ const ViewCourse = () => {
     )
 
     return (
-        <div>
-           
+    <div>
 
-            <div className="container mt-4">
-                <h1><b><i>VIEW COURSES</i></b></h1>
-                <br />
-                <div className="row g-4">
-                    {data.map(
-                        (value, index) => {
-                            return (
-                                <div className="col-12 col-sm-6 col-md-6 col-lg-3">
-                                    <div className="card h-100 shadow-sm">
-                                        
-                                        <div className="card-body">
-                                            <h5 className="card-title text-center">{value.brand}</h5>
-                                            <p><b>course_name:</b>{value.course_name}</p>
-                                            <p><b>created_at:</b> {value.created_at}</p>
-                                            <p><b>duration:</b> {value.duration}</p>
-                                            <p><b>fee:</b> {value.fee}</p>
-                                            <p><b>id:</b>{value.id}</p>
-                                            <p><b>mode:</b> {value.mode}</p>
-                                            <p><b>trainer:</b> {value.trainer}</p>
-                                          
+      <div className="container mt-4">
+        <h2 className="text-center mb-4">
+          <b><i>VIEW ALL EMPLOYEES</i></b>
+        </h2>
+        <table className="table">
+          <thead>
+            <tr>
+              <th scope="col">course_name</th>
+              <th scope="col">created_at</th>
+              <th scope="col">duration</th>
+              <th scope="col">fee</th>
+              <th scope="col">id</th>
+              <th scope="col">mode</th>
+              <th scope="col">trainer</th>
+            </tr>
+          </thead>
+          
+                <tbody>
+                  {data.map
+          (
+            (value,index)=>{
+              return(
+            <tr>
+              <td>{value.course_name}</td>
+              <td>{value.created_at}</td>
+              <td>{value.duration}</td>
+              <td>{value.fee}</td>
+               <td>{value.id}</td>
+              <td>{value.mode}</td>
+              <td>{value.trainer}</td>
+            </tr>
 
-                                            <button className="btn btn-primary w-100">
-                                                View Details
-                                            </button>
-                                        </div>
-                                    </div>
-                                </div>
-                            )
-
-                        }
-                    )}
-
-                </div>
-            </div>
-        </div>
-    )
+             )
+            }
+          )}
+          </tbody>
+             
+          
+        </table>
+      </div>
+    </div>
+  )
 }
 export default ViewCourse;
